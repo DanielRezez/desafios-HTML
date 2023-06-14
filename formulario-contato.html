@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de contato</title>
+    <style type="text/css">
+        p {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!--criação do formulário-->
+    <form action="" method="post">
+        <!--borda do campo de formulário-->
+        <fieldset>
+            <!--define uma legenda para o campo de formulário-->
+            <legend>Entre em contato</legend>
+            <!---->
+            <!---->
+            <p>Assunto: 
+                <!--cria uma caixa seletora com as respectivas opções-->
+                <select name="serviço" id="select">
+                    <option value="" selected></option>
+                    <option value="">Suporte
+                    </option>
+                    <option value="">Sugestão</option>
+                    <option value="">Reclamação</option>
+                </select>
+            </p>
+            <!---->
+            <!---->
+            <p>Nome completo:<br>
+                <input type="text" name="nome" placeholder="Seu nome">
+            </p>
+            <!---->
+            <!---->
+            <p>E-mail:<br>
+                <input type="email" name="email" placeholder="email@seudominio.com">
+            </p>
+            <!---->
+            <!---->
+            <p>Mensagem:<br>
+                <textarea name="mensagem" id="" cols="30" rows="10"></textarea>
+            </p>
+            <!---->
+            <!---->
+            <p style="font-weight: normal;">
+                <input type="checkbox" name="checkbox" id=""> Aceito receber novidades por e-mail
+            </p>
+            <!---->
+            <!---->
+            <button name="enviar">Enviar</button>
+        </fieldset>
+    </form>
+</body>
+</html>
