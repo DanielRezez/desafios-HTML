@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário de contato</title>
     <style type="text/css">
-        p {
+        label {
             font-weight: bold;
         }
     </style>
@@ -20,39 +20,44 @@
             <legend>Entre em contato</legend>
             <!---->
             <!---->
-            <p>Assunto: 
+            <label>Assunto: 
                 <!--cria uma caixa seletora com as respectivas opções-->
-                <select name="serviço" id="select">
+                <select name="serviço">
                     <option value="" selected></option>
                     <option value="">Suporte
                     </option>
                     <option value="">Sugestão</option>
                     <option value="">Reclamação</option>
                 </select>
-            </p>
+            </label>
+            <br><br>
             <!---->
             <!---->
-            <p>Nome completo:<br>
-                <input type="text" name="nome" placeholder="Seu nome">
-            </p>
+            <label>Nome completo:<br>
+                <input type="text" name="nome" placeholder="Seu nome" max="100" pattern="[A-Za-z]{max}" title="Digite um nome válido">
+            </label>
+            <br><br>
             <!---->
             <!---->
-            <p>E-mail:<br>
-                <input type="email" name="email" placeholder="email@seudominio.com">
-            </p>
+            <label>E-mail:<br>
+                <input type="email" name="email" placeholder="email@seudominio.com" max="100" pattern="+@+.com+" title="Digite corretamente">
+            </label>
+            <br><br>
             <!---->
             <!---->
-            <p>Mensagem:<br>
+            <label>Mensagem:<br>
                 <textarea name="mensagem" id="" cols="30" rows="10"></textarea>
-            </p>
+            </label>
+            <br><br>
             <!---->
             <!---->
-            <p style="font-weight: normal;">
+            <div>
                 <input type="checkbox" name="checkbox" id=""> Aceito receber novidades por e-mail
-            </p>
+            </div>
+            <br>
             <!---->
             <!---->
-            <button name="enviar">Enviar</button>
+            <button name="enviar" type="submit">Enviar</button>
         </fieldset>
     </form>
 </body>
