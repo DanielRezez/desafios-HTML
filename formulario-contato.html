@@ -12,53 +12,55 @@
     </style>
 </head>
 <body>
-    <!--criação do formulário-->
-    <form action="" method="post">
-        <!--borda do campo de formulário-->
-        <fieldset>
-            <!--define uma legenda para o campo de formulário-->
-            <legend>Entre em contato</legend>
-            <!---->
-            <!---->
-            <label>Assunto: 
-                <!--cria uma caixa seletora com as respectivas opções-->
-                <select name="serviço">
-                    <option value="" selected></option>
-                    <option value="">Suporte
-                    </option>
-                    <option value="">Sugestão</option>
-                    <option value="">Reclamação</option>
-                </select>
-            </label>
-            <br><br>
-            <!---->
-            <!---->
-            <label>Nome completo:<br>
-                <input type="text" name="nome" placeholder="Seu nome" max="100" pattern="[A-Za-z]{max}" title="Digite um nome válido">
-            </label>
-            <br><br>
-            <!---->
-            <!---->
-            <label>E-mail:<br>
-                <input type="email" name="email" placeholder="email@seudominio.com" max="100" pattern="+@+.com+" title="Digite corretamente">
-            </label>
-            <br><br>
-            <!---->
-            <!---->
-            <label>Mensagem:<br>
-                <textarea name="mensagem" id="" cols="30" rows="10"></textarea>
-            </label>
-            <br><br>
-            <!---->
-            <!---->
-            <div>
-                <input type="checkbox" name="checkbox" id=""> Aceito receber novidades por e-mail
-            </div>
-            <br>
-            <!---->
-            <!---->
-            <button name="enviar" type="submit">Enviar</button>
-        </fieldset>
-    </form>
+    <main>
+        <!--criação do formulário-->
+        <form action="" method="post">
+            <!--borda do campo de formulário-->
+            <fieldset>
+                <!--define uma legenda para o campo de formulário-->
+                <legend>Entre em contato</legend>
+                <!---->
+                <!---->
+                <label>Assunto:
+                    <!--cria uma caixa seletora com as respectivas opções-->
+                    <select name="serviço">
+                        <option value="" selected></option>
+                        <option value="">Suporte
+                        </option>
+                        <option value="">Sugestão</option>
+                        <option value="">Reclamação</option>
+                    </select>
+                </label>
+                <br><br>
+                <!---->
+                <!---->
+                <label>Nome completo:<br>
+                    <input type="text" name="nome" placeholder="Seu nome" max="100" pattern="[A-Za-z]{max}" title="Digite um nome válido">
+                </label>
+                <br><br>
+                <!---->
+                <!---->
+                <label>E-mail:<br>
+                    <input type="email" name="email" placeholder="email@seudominio.com" max="100" pattern="+@+.com+" title="Digite corretamente">
+                </label>
+                <br><br>
+                <!---->
+                <!---->
+                <label>Mensagem:<br>
+                    <textarea name="mensagem" id="" cols="30" rows="10"></textarea>
+                </label>
+                <br><br>
+                <!---->
+                <!---->
+                <div>
+                    <input type="checkbox" name="checkbox" id=""> Aceito receber novidades por e-mail
+                </div>
+                <br>
+                <!---->
+                <!---->
+                <button name="enviar" type="submit">Enviar</button>
+            </fieldset>
+        </form>
+    </main>
 </body>
 </html>
